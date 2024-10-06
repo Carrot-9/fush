@@ -3,4 +3,8 @@ name = "fush"
 version = "0.1.0"
 edition = "2021"
 
+[build-dependencies] # <-- We added this and everything after!
+lalrpop = "0.22.0"
+
 [dependencies]
+lalrpop-util = { version = "0.21.0", features = ["lexer", "unicode"] }
